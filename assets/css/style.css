@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(13, 106, 134);
+    --secondary-color: rgb(122, 178, 196);
+    --button-hover: #749c88;
+    --button-activate: #76e47f;
+
+    --fonte-principal: 'Open Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+.container {
+    max-width: 640px;
+    margin: 50px auto;
+    background-color: var(--secondary-color);
+    padding: 20px;
+    border-radius: 4px;
+}
+
+.container h1 {
+    margin-bottom: 20px;
+}
+
+.container h2 {
+    margin-bottom: 15px;
+}
+
+form label, input {
+    display: block;
+}
+
+form input {
+    margin-bottom: 8px;
+    font-size: 16px;
+    height: 25px;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form input:focus {
+    outline: 1px solid var(--primary-color);
+}
+
+form button {
+    display: block;
+    border: none;
+    font-family: var(--fonte-principal);
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #9ed4b9;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 20px auto 0 auto;
+}
+
+form button:hover {
+    background-color: var(--button-hover);
+}
+
+form button:active {
+    background-color: var(--button-activate);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+td, th {
+    text-align: left;
+}
+
+.resultado p{
+    background-color: #76e47f;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 20 0 0 0;
+}
+
+.erro-valor p {
+    background-color: #e71515;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin: 20 0 0 0;
+}
